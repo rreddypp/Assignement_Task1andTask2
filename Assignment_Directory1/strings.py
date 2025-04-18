@@ -19,13 +19,32 @@ thrid = "cat"
 
 string ="{} {} {}.".format(first,second,thrid)
 print(string)'''
-
+'''
 
 
 price = 150
 with_tax = 150 + 50
 print(price,with_tax)
 print("Price: Rs{:.3f}. with tax: Rs{:.2f}".format(price,with_tax))
+'''
+
+
+def add(i,j):
+    return i + j
+def call(i,j):
+    return add(i, j)
+def pas(i,j,fn):
+    return fn(i,j)
+res=pas(1,2,call)
+print(res)
+
+
+
+
+
+
+
+
 
 
 
